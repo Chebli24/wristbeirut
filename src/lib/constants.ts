@@ -1,6 +1,8 @@
 // WhatsApp Configuration
 // Replace with your actual WhatsApp number (format: country code + number, no + or spaces)
-export const WHATSAPP_LINK = "https://wa.me/9611234567"; // Example: Lebanon +961
+// Can be set via NEXT_PUBLIC_WHATSAPP_LINK environment variable
+export const WHATSAPP_LINK =
+  process.env.NEXT_PUBLIC_WHATSAPP_LINK || "https://wa.me/9611234567"; // Example: Lebanon +961
 
 // Best Sellers Data
 export interface BestSeller {
@@ -66,6 +68,8 @@ export const contactInfo = {
 
 // Google Maps Embed URL
 // Replace with your actual Google Maps embed URL or coordinates
+// Can be set via NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL environment variable
 export const GOOGLE_MAPS_EMBED_URL =
+  process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL ||
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.1234567890!2d35.501234!3d33.893789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUzJzM3LjYiTiAzNcKwMzAnMDQuNCJF!5e0!3m2!1sen!2slb!4v1234567890123!5m2!1sen!2slb";
 
